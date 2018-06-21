@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1=title
+    p Bienvenido a la #{title}#{id}
+    br
+    p Conversacion
+    textarea(name="mensaje" class="form-control" rows=5 cols=50 readonly="true" id="txArea1" style={background: "white"})
+    br
+    textarea(name="mensaje" class="form-control" rows=5 cols=50 id="txArea2")
+    br
+    input(type="button" value="Enviar" class="btn btn-primary" id="btnEnviar")
+    input(type="hidden" id="hid" value=id)
